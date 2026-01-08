@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0b0b0b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #111;
+  padding: 40px 20px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e0b34b;
+}
+
+header h1 {
+  color: #e0b34b;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 6vw; /* responsive shrink */
+  word-break: break-word;
+}
+
+form {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 30px auto 50px;
+  box-shadow: 0 0 25px rgba(255, 215, 130, 0.15);
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 600;
+  color: #e0b34b;
+  line-height: 1.4;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+input[type="time"] { width: 48%; }
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  background: #222;
+  padding: 8px 14px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1 1 45%;
+  word-break: break-word;
+}
+
+.availability {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #e0b34b;
+  color: #000;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover { background-color: #ffda77; }
+
+.note {
+  text-align: center;
+  margin-top: 15px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0 10px;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 60px auto 20px;
+  flex-wrap: wrap;
+}
+
+.logo-row img {
+  height: 85px;
+  width: auto;
+  object-fit: contain;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  padding: 15px 10px 40px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  header h1 { font-size: 7vw; }
+  form { padding: 20px; margin: 15px auto 40px; }
+  .checkbox-group label { flex: 1 1 100%; }
+  button { font-size: 15px; padding: 11px; }
+  .note { font-size: 13px; padding: 0 5px; }
+}
