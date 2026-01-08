@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DMR Productions Volunteer Sign-Up</title>
+  <link rel="stylesheet" href="form-styles.css">
+</head>
+<body>
+<header>
+  <h1>Volunteer Team Sign‑Up</h1>
+</header>
+
+<form id="signupForm">
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label>Select Event Dates (choose one or more):</label>
+  <div class="checkbox-group" id="eventGroup">
+    <label><input type="checkbox" name="event" value="Jan 17 – Model Casting (11–2 PM)"> Jan 17 – Model Casting (11–2 PM)</label>
+    <label><input type="checkbox" name="event" value="Jan 24 – Model Casting (11–2 PM)"> Jan 24 – Model Casting (11–2 PM)</label>
+    <label><input type="checkbox" name="event" value="Mar 13 – Pre‑Event Set‑Up"> Mar 13 – Pre‑Event Set‑Up</label>
+    <label><input type="checkbox" name="event" value="Mar 14 – Designer Showcase"> Mar 14 – Designer Showcase</label>
+  </div>
+
+  <label>Availability Time (applies to all selected dates):</label>
+  <div class="availability">
+    <input type="time" id="availStart" name="availStart" required>
+    <input type="time" id="availEnd" name="availEnd" required>
+  </div>
+
+  <label>Select Up to Three Positions of Interest:</label>
+  <div class="checkbox-group" id="positionGroup">
+    <label><input type="checkbox" name="position" value="Model Coordinator">Model Coordinator</label>
+    <label><input type="checkbox" name="position" value="Logistics Assistant">Logistics Assistant</label>
+    <label><input type="checkbox" name="position" value="Social Media / Marketing">Social Media / Marketing</label>
+    <label><input type="checkbox" name="position" value="Backstage Crew">Backstage Crew</label>
+    <label><input type="checkbox" name="position" value="Guest Relations">Guest Relations</label>
+    <label><input type="checkbox" name="position" value="Photographer / Videographer Assistant">Photographer / Videographer Assistant</label>
+  </div>
+
+  <label for="notes">Additional Comments (optional):</label>
+  <textarea id="notes" name="notes" rows="4" placeholder="Any special skills or preferences?"></textarea>
+
+  <p class="note">
+    You may select up to three positions. Selecting multiple events indicates where you’re available but does not guarantee placement.
+  </p>
+
+  <button type="submit">Submit Sign‑Up</button>
+
+  <p class="note">You’ll receive a confirmation email once your participation is confirmed.</p>
+</form>
+
+<!-- Logos Near Bottom -->
+<div class="logo-row">
+  <img src="https://scontent.fsac1-2.fna.fbcdn.net/v/t39.30808-6/396707006_728607455973870_346586131696285621_n.jpg"
+       alt="Fashion Week Sacramento Logo"
+       style="height:90px;width:auto;object-fit:contain;">
+  <img src="https://www.dmrproductions.online/uploads/1/0/6/4/106476285/published/lupus.jpg?1559005363"
+       alt="L for Lupus Community Foundation Logo"
+       style="height:90px;width:auto;object-fit:contain;">
+</div>
+
+<footer>
+  © DMR Productions | Fashion Week Sacramento | Supporting the L for Lupus Community Foundation
+</footer>
+</body>
+</html>
